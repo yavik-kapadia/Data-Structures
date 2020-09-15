@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1d3cb20-b8eb-414b-9147-d9454ad598b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BitOutputStreamTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testOutput.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bitwise Operation Test/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bitwise Operation Test/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bitwise Operation Test/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bitwise Operation Test/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bitwise Operation Test/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bitwise Operation Test/Bitwise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bitwise Operation Test/src/TestFileStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BitOutStream.java" beforeDir="false" />
-    </list>
+    <list default="true" id="d1d3cb20-b8eb-414b-9147-d9454ad598b5" name="Default Changelist" comment="Completed BitStream Project" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +33,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nix Melos &lt;yavikkapadia@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/.." value="master" />
@@ -102,15 +109,36 @@
       <option name="presentableId" value="Default" />
       <updated>1600034261067</updated>
       <workItem from="1600034264100" duration="8317000" />
-      <workItem from="1600152184741" duration="10406000" />
+      <workItem from="1600152184741" duration="10729000" />
     </task>
+    <task id="LOCAL-00001" summary="Completed BitStream Project">
+      <created>1600206350068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600206350068</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Completed BitStream Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed BitStream Project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="870" y="56" key="#Java" timestamp="1600202072720">
@@ -125,27 +153,31 @@
       <screen x="0" y="0" width="2560" height="1034" />
     </state>
     <state x="387" y="375" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1034@0.0.2560.1034" timestamp="1600205727763" />
+    <state x="129" y="88" key="CommitChangelistDialog2" timestamp="1600206189493">
+      <screen x="0" y="0" width="2560" height="1034" />
+    </state>
+    <state x="129" y="88" key="CommitChangelistDialog2/0.0.2560.1034@0.0.2560.1034" timestamp="1600206189493" />
     <state x="1060" y="276" key="FileChooserDialogImpl" timestamp="1600159523299">
       <screen x="0" y="0" width="2560" height="1034" />
     </state>
     <state x="1060" y="272" key="FileChooserDialogImpl/0.0.2560.1018@0.0.2560.1018" timestamp="1600152242532" />
     <state x="1060" y="276" key="FileChooserDialogImpl/0.0.2560.1034@0.0.2560.1034" timestamp="1600159523299" />
-    <state width="1234" height="269" key="GridCell.Tab.0.bottom" timestamp="1600205470660">
+    <state width="1234" height="269" key="GridCell.Tab.0.bottom" timestamp="1600206221915">
       <screen x="0" y="0" width="2560" height="1034" />
     </state>
-    <state width="1234" height="269" key="GridCell.Tab.0.bottom/0.0.2560.1034@0.0.2560.1034" timestamp="1600205470660" />
-    <state width="1234" height="269" key="GridCell.Tab.0.center" timestamp="1600205470660">
+    <state width="1234" height="269" key="GridCell.Tab.0.bottom/0.0.2560.1034@0.0.2560.1034" timestamp="1600206221915" />
+    <state width="1234" height="269" key="GridCell.Tab.0.center" timestamp="1600206221915">
       <screen x="0" y="0" width="2560" height="1034" />
     </state>
-    <state width="1234" height="269" key="GridCell.Tab.0.center/0.0.2560.1034@0.0.2560.1034" timestamp="1600205470660" />
-    <state width="1234" height="269" key="GridCell.Tab.0.left" timestamp="1600205470660">
+    <state width="1234" height="269" key="GridCell.Tab.0.center/0.0.2560.1034@0.0.2560.1034" timestamp="1600206221915" />
+    <state width="1234" height="269" key="GridCell.Tab.0.left" timestamp="1600206221915">
       <screen x="0" y="0" width="2560" height="1034" />
     </state>
-    <state width="1234" height="269" key="GridCell.Tab.0.left/0.0.2560.1034@0.0.2560.1034" timestamp="1600205470660" />
-    <state width="1234" height="269" key="GridCell.Tab.0.right" timestamp="1600205470660">
+    <state width="1234" height="269" key="GridCell.Tab.0.left/0.0.2560.1034@0.0.2560.1034" timestamp="1600206221915" />
+    <state width="1234" height="269" key="GridCell.Tab.0.right" timestamp="1600206221915">
       <screen x="0" y="0" width="2560" height="1034" />
     </state>
-    <state width="1234" height="269" key="GridCell.Tab.0.right/0.0.2560.1034@0.0.2560.1034" timestamp="1600205470660" />
+    <state width="1234" height="269" key="GridCell.Tab.0.right/0.0.2560.1034@0.0.2560.1034" timestamp="1600206221915" />
     <state x="860" y="252" key="IDE.errors.dialog" timestamp="1600152201160">
       <screen x="0" y="0" width="2560" height="1018" />
     </state>
@@ -155,10 +187,10 @@
     </state>
     <state x="186" y="172" key="SettingsEditor/0.0.2560.1034@0.0.2560.1034" timestamp="1600202056072" />
     <state x="122" y="194" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1600054845020" />
-    <state x="872" y="250" key="Vcs.Push.Dialog.v2" timestamp="1600159195356">
+    <state x="872" y="250" key="Vcs.Push.Dialog.v2" timestamp="1600206379885">
       <screen x="0" y="0" width="2560" height="1034" />
     </state>
-    <state x="872" y="250" key="Vcs.Push.Dialog.v2/0.0.2560.1034@0.0.2560.1034" timestamp="1600159195356" />
+    <state x="872" y="250" key="Vcs.Push.Dialog.v2/0.0.2560.1034@0.0.2560.1034" timestamp="1600206379885" />
     <state x="603" y="388" key="cloudConfig.SelfSettingsDialog" timestamp="1600054632092">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>

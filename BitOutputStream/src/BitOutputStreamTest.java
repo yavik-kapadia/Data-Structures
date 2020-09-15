@@ -51,7 +51,8 @@ public class BitOutputStreamTest {
             if (bit == '1') {
                 bitsHolder = bitsHolder | 1;
             }
-            // if 8 bits are occupied then bitsHolder will be written to the file
+            // increments occupiedBits
+            // Then checks if 8 bits are occupied then bitsHolder will be written to the file
             if (++occupiedBits == 8) {
                 output.write(bitsHolder);
                 occupiedBits = 0;
