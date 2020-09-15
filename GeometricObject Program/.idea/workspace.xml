@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa2d67df-d054-4fe1-a3c4-ebbf4724e1ab" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1h17DMBS8wetV49tY1Nz3XxaHPA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/out/production" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TriangleTest">
+    <configuration name="TriangleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TriangleTest" />
+      <module name="GeometricObject Program" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Java Scratch" nameIsGenerated="true">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.TriangleTest" />
+      <item itemvalue="Java Scratch.Unnamed" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TriangleTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa2d67df-d054-4fe1-a3c4-ebbf4724e1ab" name="Default Changelist" comment="" />
+      <created>1599166623725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599166623725</updated>
+      <workItem from="1599166629420" duration="240000" />
+      <workItem from="1599167046338" duration="14249000" />
+      <workItem from="1599544076066" duration="1966000" />
+      <workItem from="1599598064939" duration="334000" />
+      <workItem from="1599601925251" duration="2324000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="20" y="202" key="#Project_Structure" timestamp="1599167069339">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="20" y="202" key="#Project_Structure/0.23.1680.1027@0.23.1680.1027" timestamp="1599167069339" />
+    <state x="0" y="404" key="#TriangleTest" timestamp="1599603076920">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="0" y="404" key="#TriangleTest/0.23.1680.1027@0.23.1680.1027" timestamp="1599603076920" />
+    <state x="105" y="182" key="#Unnamed" timestamp="1599175638465">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="105" y="182" key="#Unnamed/0.0.1680.1050@0.0.1680.1050" timestamp="1599175638465" />
+    <state x="105" y="201" key="#Unnamed/0.23.1680.1027@0.23.1680.1027" timestamp="1599173151236" />
+    <state x="0" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599173142765">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="0" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1599173142765" />
+    <state x="606" y="403" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599603382197">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="606" y="403" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1680.1027@0.23.1680.1027" timestamp="1599603382197" />
+    <state x="319" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599602678653">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="319" y="290" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1599602678653" />
+    <state width="1121" height="295" key="GridCell.Tab.0.bottom" timestamp="1599608788947">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1599201796121" />
+    <state width="1121" height="295" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1599608788947" />
+    <state width="1121" height="295" key="GridCell.Tab.0.center" timestamp="1599608788947">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1599201796120" />
+    <state width="1121" height="295" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1599608788947" />
+    <state width="1121" height="295" key="GridCell.Tab.0.left" timestamp="1599608788946">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1599201796119" />
+    <state width="1121" height="295" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1599608788946" />
+    <state width="1121" height="295" key="GridCell.Tab.0.right" timestamp="1599608788947">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1599201796121" />
+    <state width="1121" height="295" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1599608788947" />
+    <state x="97" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1599598066787">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="97" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1599598066787" />
+    <state x="319" y="307" key="extract.method.dialog" timestamp="1599598241138">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="319" y="307" key="extract.method.dialog/0.23.1680.1027@0.23.1680.1027" timestamp="1599598241138" />
+    <state x="0" y="159" key="new project wizard" timestamp="1599167093852">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="0" y="159" key="new project wizard/0.23.1680.1027@0.23.1680.1027" timestamp="1599167093852" />
+  </component>
+</project>

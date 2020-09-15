@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1d3cb20-b8eb-414b-9147-d9454ad598b5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hTToxdVvCOKNS8xoELFjdGn9uu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1d3cb20-b8eb-414b-9147-d9454ad598b5" name="Default Changelist" comment="" />
+      <created>1600034261067</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600034261067</updated>
+      <workItem from="1600034264100" duration="8317000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="305" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600054352256">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="305" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1600054352256" />
+    <state x="122" y="194" key="SettingsEditor" timestamp="1600054845020">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="122" y="194" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1600054845020" />
+    <state x="603" y="388" key="cloudConfig.SelfSettingsDialog" timestamp="1600054632092">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="603" y="388" key="cloudConfig.SelfSettingsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1600054632092" />
+    <state x="632" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1600034268921">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="632" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1600034268921" />
+    <state x="217" y="159" key="new project wizard" timestamp="1600127999939">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="217" y="159" key="new project wizard/0.23.1680.1027@0.23.1680.1027" timestamp="1600127999939" />
+  </component>
+</project>
