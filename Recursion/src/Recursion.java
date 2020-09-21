@@ -30,10 +30,7 @@ public class Recursion {
      * @param value string to be reversed
      */
     public static void reverseDisplay(String value) {
-        String reversed ="";
-        for (int i = value.length(); i >= 0; i--) {
-                reverseDisplay(value, i);
-        }
+        reverseDisplay(value, value.length() - 1);
     }
 
     /**
