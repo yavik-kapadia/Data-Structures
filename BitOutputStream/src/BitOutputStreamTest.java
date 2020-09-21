@@ -24,7 +24,7 @@ public class BitOutputStreamTest {
      */
     static class BitOutputStream {
         private int bitsHolder;
-        private final FileOutputStream output;
+        private FileOutputStream output;
         private int occupiedBits;
 
         /**
@@ -44,6 +44,9 @@ public class BitOutputStreamTest {
          * @throws IOException if unable to write to file
          */
         void writeBit(char bit) throws IOException {
+
+            // increments occupiedBits
+            occupiedBits++;
             // shifts bits to the right to make room
             bitsHolder = bitsHolder << 1;
 
@@ -51,9 +54,9 @@ public class BitOutputStreamTest {
             if (bit == '1') {
                 bitsHolder = bitsHolder | 1;
             }
-            // increments occupiedBits
+
             // Then checks if 8 bits are occupied then bitsHolder will be written to the file
-            if (++occupiedBits == 8) {
+            if (occupiedBits == 8) {
                 output.write(bitsHolder);
                 occupiedBits = 0;
             }
