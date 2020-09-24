@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 /**
  * A program to display a user provided string in reverse order using recursion
  * and to print all permutation of a string.
@@ -36,7 +37,7 @@ public class ReverseString {
      * helper method for reversing a string
      *
      * @param value string to be processed
-     * @param high index of the substring
+     * @param high  index of the substring
      */
     public static void reverseDisplay(String value, int high) {
         if (high >= 0) {
