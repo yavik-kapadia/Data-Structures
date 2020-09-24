@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 /**
  * A program to display a user provided string in reverse order using recursion
- * and to print all permutation of a string.
  *
  * @author Yavik Kapadia
  * @version 09/20/2020
