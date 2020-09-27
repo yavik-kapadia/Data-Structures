@@ -45,7 +45,7 @@ public class SortArrayList {
      */
     public static <E extends Comparable<E>> void sort(ArrayList<E> list) {
 
-        // variables to hold the current minimum value and it's index
+        // variables to hold the CurrentMin value and it's index
         E currentMin;
         int currentMinIndex;
 
@@ -56,8 +56,8 @@ public class SortArrayList {
 
             //j will always be ahead of i, thus i != j ever
             for (int j = i + 1; j < list.size(); j++) {
-                // if the currentmin is greater than the value at
-                // then the value of j will be the new current min and currentMinIndex will be j
+                // if the currentMin is greater than the value at
+                // then the value of j will be the new currentMin and currentMinIndex will be j
                 if (currentMin.compareTo(list.get(j)) > 0) {
                     currentMin = list.get(j);
                     currentMinIndex = j;
