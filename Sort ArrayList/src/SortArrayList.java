@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class SortArrayList {
     /**
      * Main method to test the program
+     *
      * @param args supplies command-line arguments as an array of String objects
      */
     public static void main(String[] args) {
@@ -18,14 +19,14 @@ public class SortArrayList {
         integers.add(4);
         integers.add(3);
         sort(integers);
-        System.out.println(integers);
+        printList(integers);
 
         ArrayList<Double> doubles = new ArrayList<>();
         doubles.add(3.4);
         doubles.add(1.2);
         doubles.add(-12.3);
         sort(doubles);
-        System.out.println(doubles);
+        printList(doubles);
 
         ArrayList<String> strings = new ArrayList<>();
         strings.add("Bob");
@@ -33,15 +34,16 @@ public class SortArrayList {
         strings.add("Ted");
         strings.add("Carol");
         sort(strings);
-        System.out.println(strings);
+        printList(strings);
     }
+
     /**
      * when using the comparable interface the CompareTo method will return 0 if the same,
      * returns positive if first object is greater than the other,
      * returns negative if first object is lesser than the other.
      *
      * @param list which is being sorted
-     * @param <E> formal generic type allows us to pass any type of object
+     * @param <E>  the type of elements in this arraylist
      */
     public static <E extends Comparable<E>> void sort(ArrayList<E> list) {
 
@@ -72,6 +74,18 @@ public class SortArrayList {
 
     }
 
+    /**
+     * Print elements that are contained in an Arraylist
+     *
+     * @param list which will have its contents printed out
+     * @param <E>  the type of elements in this ArrayList
+     */
+    public static <E> void printList(ArrayList<E> list) {
+        for (E e : list) {
+            System.out.print(e + " ");
+        }
+        System.out.println();
+    }
 
 
 }
