@@ -2,7 +2,6 @@ import java.io.File;
 import java.util.TreeMap;
 import java.util.Scanner;
 import java.util.regex.Pattern;
-
 /**
  * A program to count the occurrences of words in a text file
  * which is passed in through command line
@@ -20,37 +19,49 @@ public class CountWords {
         File file = new File(args[0]);
         //opens file if it exists
         if (file.exists()) {
+            String divider = "----------------------------------%n";
 
             System.out.printf(" %-15s %15s %n", "Word", "Count");
-            System.out.printf("----------------------------------%n");
+            System.out.print(divider);
 
             countWords(file).forEach((k, v) -> System.out.printf(" %-15s %15d %n", k, v));
 
-            System.out.printf("----------------------------------%n");
+            System.out.print(divider);
         } else {
             System.out.println("File does not exist");
         }
     }
 
+    /**
+     * A method to count the occurrence of each word in a file and save to a treemap for sorting key/value pairs in
+     * alphabetical order
+     *
+     * @param file whose contents are being read
+     * @return count of occurrence for each word
+     * @throws Exception if file does not exist
+     */
     public static TreeMap<String, Integer> countWords(File file) throws Exception {
         Scanner input = new Scanner(file);
-        TreeMap<String, Integer> wordCount = new TreeMap<>();
+        TreeMap<String, Integer> wordMap = new TreeMap<>();
 
         while (input.hasNextLine()) {
             String line = input.nextLine();
+
             String[] words = line.toLowerCase().split("[\\s+\\p{P}]");
+
             for (String word : words) {
                 if (word.trim().length() > 0 && word.trim().matches("[a-z]+")) {
-                    if (wordCount.containsKey(word)) {
-                        wordCount.put(word, wordCount.get(word) + 1);
+                    if (wordMap.containsKey(word)) {
+                        wordMap.put(word, wordMap.get(word) + 1);
                     } else {
-                        wordCount.put(word, 1);
+                        wordMap.put(word, 1);
                     }
+
                 }
             }
 
         }
-        return wordCount;
+        return wordMap;
     }
 
 }
