@@ -1,13 +1,13 @@
 import java.io.File;
 import java.util.TreeMap;
 import java.util.Scanner;
-import java.util.regex.Pattern;
+
 /**
  * A program to count the occurrences of words in a text file
  * which is passed in through command line
  *
  * @author Yavik Kapadia
- * @version 10-19-2020
+ * @version 10-20-2020
  */
 public class CountWords {
     /**
@@ -25,11 +25,11 @@ public class CountWords {
 
         }
         //opens file if it exists
-        String divider = "----------------------------------%n";
+
         System.out.printf(" %-15s %15s %n", "Word", "Count");
-        System.out.print(divider);
+        System.out.printf("----------------------------------%n");
         countWords(file).forEach((k, v) -> System.out.printf(" %-15s %15d %n", k, v));
-        System.out.print(divider);
+        System.out.printf("----------------------------------%n");
     }
 
 
