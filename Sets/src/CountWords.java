@@ -16,21 +16,22 @@ public class CountWords {
      * @throws Exception if file does not exist.
      */
     public static void main(String[] args) throws Exception {
-        File file = new File(args[0]);
-        //opens file if it exists
-        if (file.exists()) {
-            String divider = "----------------------------------%n";
-
-            System.out.printf(" %-15s %15s %n", "Word", "Count");
-            System.out.print(divider);
-
-            countWords(file).forEach((k, v) -> System.out.printf(" %-15s %15d %n", k, v));
-
-            System.out.print(divider);
+        File file = null;
+        if (0 < args.length) {
+            file = new File(args[0]);
         } else {
-            System.out.println("File does not exist");
+            System.err.println("No file was provided.");
+            System.exit(1);
+
         }
+        //opens file if it exists
+        String divider = "----------------------------------%n";
+        System.out.printf(" %-15s %15s %n", "Word", "Count");
+        System.out.print(divider);
+        countWords(file).forEach((k, v) -> System.out.printf(" %-15s %15d %n", k, v));
+        System.out.print(divider);
     }
+
 
     /**
      * A method to count the occurrence of each word in a file and save to a treemap for sorting key/value pairs in
