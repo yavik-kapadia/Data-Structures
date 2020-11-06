@@ -33,6 +33,8 @@ public class Point implements Comparable<Point> {
         List<Point> y_coords = Arrays.asList(points);
         System.out.println("Points sorted in increasing order of their x-coordinates: ");
         System.out.println(y_coords);
+
+
     }
 
     /**
