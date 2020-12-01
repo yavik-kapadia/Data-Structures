@@ -96,9 +96,9 @@ public class ExecutionTimerTest {
     /**
      * Merges two sorted lists
      *
-     * @param firstHalf
-     * @param secondHalf
-     * @param temp
+     * @param firstHalf left half of list
+     * @param secondHalf right half of light
+     * @param temp placeholder
      */
     public static void merge(int[] firstHalf, int[] secondHalf, int[] temp) {
         int current1 = 0; // current index in firstHalf
@@ -117,6 +117,10 @@ public class ExecutionTimerTest {
             temp[current3++] = secondHalf[current2++];
     }
 
+    /**
+     * helper method for quickSort
+     * @param list to quickSort
+     */
     public static void quickSort(int[] list) {
         quickSort(list, 0, list.length - 1);
     }
