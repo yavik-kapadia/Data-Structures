@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Comparator;
-
+import java.util.List;
 
 /**
  * A Class to model a point on the coordinate plane
@@ -20,20 +20,21 @@ public class Point implements Comparable<Point> {
         Point[] points = new Point[100];
         // Randomly generated 100 points
         for (int i = 0; i < points.length; i++) {
-            points[i] = new Point(Math.random()*100, Math.random()*100);
+            points[i] = new Point(Math.random() * 5, Math.random() * 5);
         }
         //Display the points in increasing order of their x-coordinates
         Arrays.sort(points);
-        System.out.println("x-coordinates increasing order: ");
-        for(Point x : points)
-            System.out.println(x);
-        System.out.println();
+        List<Point> x_coords = Arrays.asList(points);
+        System.out.println("Points sorted in increasing order of their x-coordinates: ");
+        System.out.println(x_coords);
 
         //Display the points in increasing order of their y-coordinates
         Arrays.sort(points, new CompareY());
-        System.out.println("y-coordinates increasing order: ");
-        for(Point y : points)
-            System.out.println(y);
+        List<Point> y_coords = Arrays.asList(points);
+        System.out.println("Points sorted in increasing order of their x-coordinates: ");
+        System.out.println(y_coords);
+
+
     }
 
     /**
@@ -67,7 +68,7 @@ public class Point implements Comparable<Point> {
     }
 
     /**
-     * returns y-coordinate value
+     * retuns y-coordinate value
      *
      * @return y-coordinate value
      */
@@ -107,7 +108,7 @@ public class Point implements Comparable<Point> {
 
     @Override
     public String toString() {
-        return String.format("(%f, %f)", getX(), getY());
+        return String.format("(%.2f, %.2f)", getX(), getY());
     }
 }
 
