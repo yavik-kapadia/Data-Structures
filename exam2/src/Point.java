@@ -12,7 +12,7 @@ import java.util.Objects;
  * @author Yavik Kapadia
  * @version 10-28-2020
  */
-class Point implements Comparable<Point> {
+public class Point implements Comparable<Point> {
     //private fields
     private double x;
     private double y;
@@ -21,7 +21,7 @@ class Point implements Comparable<Point> {
      * Main method
      */
     public static void main(String[] args) {
-         Point[] points = new Point[100];
+        Point[] points = new Point[100];
         // Randomly generated 100 points
         for (int i = 0; i < points.length; i++) {
             points[i] = new Point(Math.random() * 100, Math.random() * 100);
@@ -29,14 +29,14 @@ class Point implements Comparable<Point> {
         //Display the points in increasing order of their x-coordinates
         Arrays.sort(points);
         System.out.println("List of coordinate from which we are looking for the closest pair: ");
-        for (Point o: points) {
+        for (Point o : points) {
             System.out.println(o);
         }
         System.out.print("The closest pair of points are: ");
         System.out.print(Pair.getClosestPair(points));
         System.out.println();
-        System.out.print("The distance between " + Pair.getClosestPair(points).getP1()+ " and " + Pair.getClosestPair(points).getP2() + ": ");
-        System.out.printf("%.2f",(Pair.getClosestPair(points).getDistance()));
+        System.out.print("The distance between " + Pair.getClosestPair(points).getP1() + " and " + Pair.getClosestPair(points).getP2() + ": ");
+        System.out.printf("%.2f", (Pair.getClosestPair(points).getDistance()));
 
     }
 
