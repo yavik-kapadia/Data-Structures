@@ -1,12 +1,83 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 
 /**
- * A program test Binary Search Trees
+ * A program to compare AVL Trees and BST
+ *
  * @author Yavik Kapadia
  * @version 12-2-2020
  */
+public class TestAVLvsBST {
+    public static void main(String[] args) {
 
+        //Inserting 500_000 nums
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 500000; i++) {
+
+            list.add((int) (Math.random() * 1_000_000));
+        }
+
+        //Initializing Trees
+        AVLTree<Integer> avlTree = new AVLTree<>();
+        BST<Integer> bst = new BST<>();
+
+        //BST Insert
+        Collections.shuffle(list);
+        long time = System.currentTimeMillis();
+        for (Integer nums : list) {
+            bst.insert(nums);
+        }
+        System.out.println("BST Insert = " + (System.currentTimeMillis() - time));
+
+
+        //BST Searching
+        Collections.shuffle(list);
+        time = System.currentTimeMillis();
+        for (Integer nums : list) {
+            bst.search(nums);
+        }
+        System.out.println("BST Search = " + (System.currentTimeMillis() - time));
+
+        //BST Delete
+        Collections.shuffle(list);
+        time = System.currentTimeMillis();
+        for (Integer nums : list) {
+            bst.delete(nums);
+        }
+        System.out.println("BST Deletion = " + (System.currentTimeMillis() - time));
+
+        //AVLTree Insert
+        Collections.shuffle(list);
+        time = System.currentTimeMillis();
+        for (Integer nums : list) {
+            avlTree.insert(nums);
+        }
+        System.out.println("AVLTree Insert = " + (System.currentTimeMillis() - time));
+
+        //AVLTree Search
+        Collections.shuffle(list);
+        time = System.currentTimeMillis();
+        for (Integer nums : list) {
+            avlTree.search(nums);
+        }
+        System.out.println("AVLTree Search = " + (System.currentTimeMillis() - time));
+
+        //AVLTree Deletion
+        Collections.shuffle(list);
+        time = System.currentTimeMillis();
+        for (Integer nums : list) {
+            avlTree.delete(nums);
+        }
+        System.out.println("AVLTree Deletion = " + (System.currentTimeMillis() - time));
+
+    }
+}
+
+/**
+ * Tree Interface
+ */
 interface Tree<E> extends Collection<E> {
     /**
      * Return true if the element is in the tree
@@ -144,76 +215,14 @@ interface Tree<E> extends Collection<E> {
     }
 }
 
-public class BST<E extends Comparable<E>> implements Tree<E> {
+/**
+ * Binary Search Tree Class
+ */
+class BST<E extends Comparable<E>> implements Tree<E> {
     protected TreeNode<E> root;
     protected int size = 0;
 
-    public static void main(String[] args) {
-        System.out.println("Testing BST");
-        BST<String> tree1 = new BST<>();
-        System.out.println("Is tree1 empty? " + tree1.isEmpty());
-        tree1.insert("George");
-        tree1.insert("Porter");
-        tree1.insert("Jeff");
-        tree1.insert("Michael");
-        tree1.insert("Adam");
-        tree1.insert("Tracy");
-        System.out.print("Inorder (Sorted): ");
-        tree1.inorder();
-        System.out.print("\nPostorder: ");
-        tree1.postorder();
-        System.out.print("\nPreorder: ");
-        tree1.preorder();
-        System.out.print("\n The number of nodes is " + tree1.getSize());
-        System.out.print("\nIs Peter in the tree1? " + tree1.search("Peter"));
-        System.out.print("\nIs Jeff in the tree1? " + tree1.search("Jeff"));
-        System.out.print("\nA path from the root to Jeff is: ");
-        java.util.ArrayList<BST.TreeNode<String>> path = tree1.path("Jeff");
-        for (int i = 0; path != null && i < path.size(); i++)
-            System.out.print(path.get(i).element + " ");
-        System.out.println();
-        System.out.println("Removing Adam from tree1.");
-        tree1.delete("Adam");
-        System.out.print("Current State of Tree1: ");
-        tree1.inorder();
-        System.out.print("\nTesting Array to BST: ");
-        Integer[] numbers = {2, 4, 3, 1, 8 , 5, 6 , 7};
-        System.out.print("\nArray of numbers: "+ Arrays.toString(numbers));
-        BST<Integer> intTree = new BST<>(numbers);
-        System.out.print("\nNumbers inOrder (Sorted): ");
-        intTree.inorder();
-        System.out.print("\nDoes intTree contain 3? " + intTree.contains(3));
-        System.out.print("\nTesting set manipulation: ");
-        BST<String> tree2 =  new BST<>();
-        tree2.insert("Jenny");
-        tree2.insert("Jeff");
-        tree2.insert("Peter");
-        tree2.insert("Tom");
-        tree2.insert("Adam");
-        System.out.print("\nCurrent State of Tree1: ");
-        tree1.inorder();
-        System.out.print("\nCurrent State of Tree2: ");
-        tree2.inorder();
-        System.out.print("\nDoes Tree1 containsAll elements of Tree2? " + tree1.containsAll(tree2));
-        System.out.print("\nTree1 addAll Tree2: ");
-        tree1.addAll(tree2);
-        tree1.inorder();
-        System.out.print("\nTree2 retainAll Tree1: " );
-        tree2.retainAll(tree1);
-        tree2.inorder();
-        System.out.print("\nTree1 removeAll Tree2: " );
-        tree1.removeAll(tree2);
-        tree1.inorder();
-        System.out.print("\nCurrent State of Tree1: ");
-        tree1.inorder();
-        System.out.print("\nCurrent State of Tree2: ");
-        tree2.inorder();
-        System.out.print("\nTree1 as an Array: " + Arrays.toString(tree1.toArray()));
-        System.out.print("\nTree2 Cleared");
-        tree2.clear();
-        System.out.print("\nTree2 as an Array: " + Arrays.toString(tree2.toArray()));
 
-    }
     /**
      * Create a default binary tree
      */
@@ -478,13 +487,13 @@ public class BST<E extends Comparable<E>> implements Tree<E> {
         }
 
         @Override
-        /** More elements for traversing? */
+        /* More elements for traversing? */
         public boolean hasNext() {
             return current < list.size();
         }
 
         @Override
-        /** Get the current element and move to the next */
+        /* Get the current element and move to the next */
         public E next() {
             return list.get(current++);
         }
@@ -500,4 +509,281 @@ public class BST<E extends Comparable<E>> implements Tree<E> {
         }
     }
 }
+
+/**
+ * AVL Tree Class
+ */
+class AVLTree<E extends Comparable<E>> extends BST<E> {
+    /**
+     * Create an empty AVL tree
+     */
+    public AVLTree() {
+    }
+
+    /**
+     * Create an AVL tree from an array of objects
+     */
+    public AVLTree(E[] objects) {
+        super(objects);
+    }
+
+    @Override
+    /** Override createNewNode to create an AVLTreeNode */
+    protected AVLTreeNode<E> createNewNode(E e) {
+        return new AVLTreeNode<E>(e);
+    }
+
+    @Override
+    /** Insert an element and rebalance if necessary */
+    public boolean insert(E e) {
+        boolean successful = super.insert(e);
+        if (!successful)
+            return false; // e is already in the tree
+        else {
+            balancePath(e); // Balance from e to the root if necessary
+        }
+
+        return true; // e is inserted
+    }
+
+    /**
+     * Update the height of a specified node
+     */
+    private void updateHeight(AVLTreeNode<E> node) {
+        if (node.left == null && node.right == null) // node is a leaf
+            node.height = 0;
+        else if (node.left == null) // node has no left subtree
+            node.height = 1 + ((AVLTreeNode<E>) (node.right)).height;
+        else if (node.right == null) // node has no right subtree
+            node.height = 1 + ((AVLTreeNode<E>) (node.left)).height;
+        else
+            node.height = 1 +
+                    Math.max(((AVLTreeNode<E>) (node.right)).height,
+                            ((AVLTreeNode<E>) (node.left)).height);
+    }
+
+    /**
+     * Balance the nodes in the path from the specified
+     * node to the root if necessary
+     */
+    private void balancePath(E e) {
+        java.util.ArrayList<TreeNode<E>> path = path(e);
+        for (int i = path.size() - 1; i >= 0; i--) {
+            AVLTreeNode<E> A = (AVLTreeNode<E>) (path.get(i));
+            updateHeight(A);
+            AVLTreeNode<E> parentOfA = (A == root) ? null :
+                    (AVLTreeNode<E>) (path.get(i - 1));
+
+            switch (balanceFactor(A)) {
+                case -2:
+                    if (balanceFactor((AVLTreeNode<E>) A.left) <= 0) {
+                        balanceLL(A, parentOfA); // Perform LL rotation
+                    } else {
+                        balanceLR(A, parentOfA); // Perform LR rotation
+                    }
+                    break;
+                case +2:
+                    if (balanceFactor((AVLTreeNode<E>) A.right) >= 0) {
+                        balanceRR(A, parentOfA); // Perform RR rotation
+                    } else {
+                        balanceRL(A, parentOfA); // Perform RL rotation
+                    }
+            }
+        }
+    }
+
+    /**
+     * Return the balance factor of the node
+     */
+    private int balanceFactor(AVLTreeNode<E> node) {
+        if (node.right == null) // node has no right subtree
+            return -node.height;
+        else if (node.left == null) // node has no left subtree
+            return +node.height;
+        else
+            return ((AVLTreeNode<E>) node.right).height -
+                    ((AVLTreeNode<E>) node.left).height;
+    }
+
+    /**
+     * Balance LL (see Figure 26.3)
+     */
+    private void balanceLL(TreeNode<E> A, TreeNode<E> parentOfA) {
+        TreeNode<E> B = A.left; // A is left-heavy and B is left-heavy
+
+        if (A == root) {
+            root = B;
+        } else {
+            if (parentOfA.left == A) {
+                parentOfA.left = B;
+            } else {
+                parentOfA.right = B;
+            }
+        }
+
+        A.left = B.right; // Make T2 the left subtree of A
+        B.right = A; // Make A the left child of B
+        updateHeight((AVLTreeNode<E>) A);
+        updateHeight((AVLTreeNode<E>) B);
+    }
+
+    /**
+     * Balance LR (see Figure 26.5)
+     */
+    private void balanceLR(TreeNode<E> A, TreeNode<E> parentOfA) {
+        TreeNode<E> B = A.left; // A is left-heavy
+        TreeNode<E> C = B.right; // B is right-heavy
+
+        if (A == root) {
+            root = C;
+        } else {
+            if (parentOfA.left == A) {
+                parentOfA.left = C;
+            } else {
+                parentOfA.right = C;
+            }
+        }
+
+        A.left = C.right; // Make T3 the left subtree of A
+        B.right = C.left; // Make T2 the right subtree of B
+        C.left = B;
+        C.right = A;
+
+        // Adjust heights
+        updateHeight((AVLTreeNode<E>) A);
+        updateHeight((AVLTreeNode<E>) B);
+        updateHeight((AVLTreeNode<E>) C);
+    }
+
+    /**
+     * Balance RR (see Figure 26.4)
+     */
+    private void balanceRR(TreeNode<E> A, TreeNode<E> parentOfA) {
+        TreeNode<E> B = A.right; // A is right-heavy and B is right-heavy
+
+        if (A == root) {
+            root = B;
+        } else {
+            if (parentOfA.left == A) {
+                parentOfA.left = B;
+            } else {
+                parentOfA.right = B;
+            }
+        }
+
+        A.right = B.left; // Make T2 the right subtree of A
+        B.left = A;
+        updateHeight((AVLTreeNode<E>) A);
+        updateHeight((AVLTreeNode<E>) B);
+    }
+
+    /**
+     * Balance RL (see Figure 26.6)
+     */
+    private void balanceRL(TreeNode<E> A, TreeNode<E> parentOfA) {
+        TreeNode<E> B = A.right; // A is right-heavy
+        TreeNode<E> C = B.left; // B is left-heavy
+
+        if (A == root) {
+            root = C;
+        } else {
+            if (parentOfA.left == A) {
+                parentOfA.left = C;
+            } else {
+                parentOfA.right = C;
+            }
+        }
+
+        A.right = C.left; // Make T2 the right subtree of A
+        B.left = C.right; // Make T3 the left subtree of B
+        C.left = A;
+        C.right = B;
+
+        // Adjust heights
+        updateHeight((AVLTreeNode<E>) A);
+        updateHeight((AVLTreeNode<E>) B);
+        updateHeight((AVLTreeNode<E>) C);
+    }
+
+    @Override
+    /** Delete an element from the binary tree.
+     * Return true if the element is deleted successfully
+     * Return false if the element is not in the tree */
+    public boolean delete(E element) {
+        if (root == null)
+            return false; // Element is not in the tree
+
+        // Locate the node to be deleted and also locate its parent node
+        TreeNode<E> parent = null;
+        TreeNode<E> current = root;
+        while (current != null) {
+            if (element.compareTo(current.element) < 0) {
+                parent = current;
+                current = current.left;
+            } else if (element.compareTo(current.element) > 0) {
+                parent = current;
+                current = current.right;
+            } else
+                break; // Element is in the tree pointed by current
+        }
+
+        if (current == null)
+            return false; // Element is not in the tree
+
+        // Case 1: current has no left children (See Figure 23.6)
+        if (current.left == null) {
+            // Connect the parent with the right child of the current node
+            if (parent == null) {
+                root = current.right;
+            } else {
+                if (element.compareTo(parent.element) < 0)
+                    parent.left = current.right;
+                else
+                    parent.right = current.right;
+
+                // Balance the tree if necessary
+                balancePath(parent.element);
+            }
+        } else {
+            // Case 2: The current node has a left child
+            // Locate the rightmost node in the left subtree of
+            // the current node and also its parent
+            TreeNode<E> parentOfRightMost = current;
+            TreeNode<E> rightMost = current.left;
+
+            while (rightMost.right != null) {
+                parentOfRightMost = rightMost;
+                rightMost = rightMost.right; // Keep going to the right
+            }
+
+            // Replace the element in current by the element in rightMost
+            current.element = rightMost.element;
+
+            // Eliminate rightmost node
+            if (parentOfRightMost.right == rightMost)
+                parentOfRightMost.right = rightMost.left;
+            else
+                // Special case: parentOfRightMost is current
+                parentOfRightMost.left = rightMost.left;
+
+            // Balance the tree if necessary
+            balancePath(parentOfRightMost.element);
+        }
+
+        size--;
+        return true; // Element inserted
+    }
+
+    /**
+     * AVLTreeNode is TreeNode plus height
+     */
+    protected static class AVLTreeNode<E> extends TreeNode<E> {
+        protected int height = 0; // New data field
+
+        public AVLTreeNode(E o) {
+            super(o);
+        }
+    }
+}
+
 
